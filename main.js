@@ -27,4 +27,16 @@ $(document).ready(function () {
     window.history.pushState('', _title, `${_base_url}?pages=${_href}`);
   });
 
+  // handle backward forward navigation
+  window.onpopstate = function(e){
+    let _full_url_popstate = new URL(window.location.href);
+    let _pages_popstate = _full_url_popstate.searchParams.get('pages');
+    let _class_popstate = _pages_popstate.split('.')[0];
+
+    $('.list-group-item').removeClass('active');
+    $(`.${_class_popstate}`).addClass('active');
+
+    $('.content').load(`pages/${_pages_popstate}`);
+  };
+
 });
