@@ -17,6 +17,9 @@ $(document).ready(function () {
 
   // handle click menu
   $('body').on('click', '.list-group-item', function () {
+    if ($(this).find('input').length) {
+      return;
+    }
     $('.list-group-item').removeClass('active');
     $(this).addClass('active');
 
