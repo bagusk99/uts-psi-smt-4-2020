@@ -1,0 +1,22 @@
+<div class="list-group">
+  <a data-href="home.html" class="home list-group-item list-group-item-action">
+    Home
+  </a>
+  <a data-href="gallery.html" class="gallery list-group-item list-group-item-action">
+    Gallery
+  </a>
+  <a data-href="video.html" class="video list-group-item list-group-item-action">
+    Video
+  </a>
+  <a data-href="calculator.html" class="calculator list-group-item list-group-item-action">
+    Calculator
+  </a>
+</div>
+<script>
+  $(document).ready(function () {
+    let _full_url = new URL(window.location.href);
+    let _class = _full_url.searchParams.get('pages').split('.')[0];
+
+    $(`.${_class}`).addClass('active');
+  });
+</script>
