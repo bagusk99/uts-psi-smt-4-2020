@@ -7,10 +7,41 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="container-fluid">
+
+  <div class="container-fluid mt-5 pt-5">
     <div class="row">
-      
+
+      <div class="col-2">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+          <a data-href="home.html" class="home list-group-item list-group-item-action">
+            Home
+          </a>
+          <a data-href="gallery.html" class="gallery list-group-item list-group-item-action">
+            Gallery
+          </a>
+          <a data-href="video.html" class="video list-group-item list-group-item-action">
+            Video
+          </a>
+          <a data-href="calculator.html" class="calculator list-group-item list-group-item-action">
+            Calculator
+          </a>
+        </div>
+      </div>
+
+      <div class="col-8 content"></div>
+
     </div>
   </div>
+
 </body>
 </html>
