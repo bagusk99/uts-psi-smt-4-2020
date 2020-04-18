@@ -1,1 +1,78 @@
-<h1>ini calculator</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS SIA</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action">
+            
+            <form action="javascript:;" onsubmit="search()">
+              <div class="input-group">
+                  <input type="text" class="form-control" id="search-input" placeholder="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary">
+                      Search
+                    </button>
+                  </div>
+              </div>
+            </form>
+
+          </a>
+          <a href="index.html" class="home list-group-item list-group-item-action">
+            Home
+          </a>
+          <a href="gallery.html" class="gallery list-group-item list-group-item-action">
+            Gallery
+          </a>
+          <a href="video.html" class="video list-group-item list-group-item-action">
+            Video
+          </a>
+          <a href="calculator.html" class="calculator list-group-item list-group-item-action active">
+            Calculator
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3"></div>
+
+      <div class="col-md-3" id="content">
+
+        <div class="form-group">
+          <label for="">Num 1</label>
+          <input type="number" class="form-control" id="num1">
+        </div>
+
+        <div class="form-group">
+          <label for="">Num 2</label>
+          <input type="number" class="form-control" id="num2">
+        </div>
+
+        <div class="form-group">
+          <label for="">result</label>
+          <input type="number" class="form-control" id="result" disabled>
+        </div>
+
+        <div class="form-group mt-2">
+          <button class="btn btn-outline-secondary" onclick="sum()">+</button>
+          <button class="btn btn-outline-secondary" onclick="subtract()">-</button>
+          <button class="btn btn-outline-secondary" onclick="multiple()">x</button>
+          <button class="btn btn-outline-secondary" onclick="divide()">/</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/calculator.js"></script>
+</body>
+</html>
