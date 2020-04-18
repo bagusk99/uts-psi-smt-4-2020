@@ -794,6 +794,7 @@ fieldset:disabled a.btn {
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
+  border-collapse: collapse;
 }
 
 .table th,
