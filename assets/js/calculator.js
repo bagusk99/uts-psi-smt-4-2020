@@ -1,10 +1,10 @@
 function count(param) {
 
   let operators = {
-    '+': function (a, b) { return a+b  },
-    '-': function (a, b) { return a-b  },
-    '*': function (a, b) { return a*b  },
-    '/': function (a, b) { return a/b  },
+    '+': function (a, b) { return a+b },
+    '-': function (a, b) { return a-b },
+    '*': function (a, b) { return a*b },
+    '/': function (a, b) { return a/b },
   }
 
   let num1 = document.getElementById('num1').value;
